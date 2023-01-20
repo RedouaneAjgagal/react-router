@@ -48,3 +48,10 @@ ul {
   margin: 0;
   padding: 0;
 }
+a {
+  text-decoration: none;
+  color: #f6ad1b;
+}
+main {
+  text-align: center;
+}

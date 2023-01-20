@@ -1,15 +1,16 @@
 import React from 'react'
-import { Outlet } from 'react-router-dom'
 import Nav from '../components/Nav'
-const Root = () => {
+
+const Error = () => {
     return (
         <>
             <Nav />
             <main>
-                <Outlet />
+                <h1>This page is not exist!</h1>
+                <p>404 error</p>
             </main>
         </>
     )
 }
 
-export default Root
+export default Error

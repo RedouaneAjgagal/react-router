@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import style from './Nav.module.css'
 
 const Nav = () => {
@@ -8,10 +8,10 @@ const Nav = () => {
             <nav>
                 <ul className={style.list}>
                     <li>
-                        <Link to='/'>Home</Link>
+                        <NavLink to='/' className={({isActive}) => isActive ? style.active : null} >Home</NavLink>
                     </li>
                     <li>
-                        <Link to='/products'>Products</Link>
+                        <NavLink to='/products' className={({isActive}) => isActive ? style.active : null}>Products</NavLink>
                     </li>
                 </ul>
             </nav>
