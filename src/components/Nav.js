@@ -8,10 +8,10 @@ const Nav = () => {
             <nav>
                 <ul className={style.list}>
                     <li>
-                        <NavLink to='/' className={({isActive}) => isActive ? style.active : null} >Home</NavLink>
+                        <NavLink to='' className={({isActive}) => isActive ? style.active : null} end>Home</NavLink>
                     </li>
                     <li>
-                        <NavLink to='/products' className={({isActive}) => isActive ? style.active : null}>Products</NavLink>
+                        <NavLink to='products' className={({isActive}) => isActive ? style.active : null} end>Products</NavLink>
                     </li>
                 </ul>
             </nav>

@@ -1,10 +1,14 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 
 const ProductDetails = () => {
     const params = useParams();
     return (
-        <div>{params.productId}</div>
+        <div>
+            {params.productId}
+            <br />
+            <Link to='..' relative='path'>back</Link>
+        </div>
     )
 }
 
